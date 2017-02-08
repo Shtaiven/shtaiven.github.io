@@ -5,6 +5,10 @@ body {
 }
 
 a {
-    color: salmon;
+    color: rgb(180, 255, 180);
     text-decoration: none;
+}
+
+#my-name, #my-profession {
+    color: salmon;
 }
