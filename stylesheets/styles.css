@@ -9,6 +9,6 @@ a {
     text-decoration: none;
 }
 
-#my-name, #my-profession {
+.cover-heading {
     color: salmon;
 }
