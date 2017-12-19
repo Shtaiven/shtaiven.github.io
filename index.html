@@ -1,42 +1,108 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Steven Eisinger</title>
-  <link href="styles.css" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&amp;subset=latin-ext" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-</head>
-<body>
-  <h1><strong>Hello! My name is <span id="my-name">Steven Eisinger</span>.</strong></h1>
-  <p>
-    Check out my <a href="https://github.com/Shtaiven" target=_blank rel="noopener noreferrer">GitHub</a>, <a href="https://bitbucket.org/Shtaiven/" target=_blank rel="noopener noreferrer">Bitbucket</a>, and <a href="https://www.linkedin.com/in/seisinger" target=_blank rel="noopener noreferrer">LinkedIn</a>.
-  </p>
-  <div id="general-info-box">
-    <h3>Projects</h3>
-    <ul>
-      <li><a href="https://github.com/Shtaiven/PIC18F4520_Projects/tree/master/Project%205" target=_blank rel="noopener noreferrer">PIC Shooter</a> - A game for the PIC18F4520, written in Assembly (Summer 2016) [<a href="media/pic_shooter_report.docx">report</a>] [<a href="#pic-shooter-video">video</a>]</li>
-      <li><a href="https://github.com/murtazay/EE457EnigmaGame" target=_blank rel="noopener noreferrer">Enigma Game</a> - An integrated circuit which implements a puzzle game, designed using GNU Electric (Fall 2016) [<a href="https://github.com/murtazay/EE457EnigmaGame/raw/master/Enigma%20Report.docx">report</a>]</li>
-      <li><a href="https://github.com/Shtaiven/NailArt" target=_blank rel="noopener noreferrer">Nail Art</a> - An application for previewing art made with iron nails on a block of wood, written in C++ (Fall 2015) [<a href="media/nail_art_report.docx">report</a>]</li>
-    </ul>
-    <h3>Education</h3>
-    <ul>
-      <li>Bachelor's of Engineering - Computer Engineering - CUNY City College of New York (Fall 2016)</li>
-    </ul>
-    <h3>Work History</h3>
-    <ul>
-      <li><a href="http://www.wearshade.com" target=_blank rel="noopener noreferrer">Shade</a> - Testing and Firmware Consultant (January 2016 - Present)</li>
-      <li><a href="http://www.wearshade.com" target=_blank rel="noopener noreferrer">Shade</a> - Electrical Engineering Intern (October 2016 - December 2016)</li>
-      <li><a href="https://www.inyourclass.com/home" target=_blank rel="noopener noreferrer">InYourClass</a> - Product Development Intern</li>
-    </ul>
-    <h3>Volunteer History</h3>
-    <ul>
-      <li><a href="http://hmi.org/" target=_blank rel="noopener noreferrer">Hetrick Martin Institute</a> - Volunteer Tutor (2016 - Present)</li>
-    </ul>
-    <h3>Extra</h3>
-      <h4>PIC Shooter Video</h4>
-      <video width="400" controls id="pic-shooter-video">
-        <source src="media/PIC_Shooter.mp4" type="video/mp4">
-      </video>
-  </div>
-</body>
+<html lang="en">
+  <head>
+    <title>Steven Eisinger</title>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal webpage for Steven Eisinger">
+    <meta name="author" content="Steven Eisinger">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- Bootstrap stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="styles/cover.css" rel="stylesheet">
+
+    <!-- Other styles -->
+    <link href="styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- Oops! No JavaScript! -->
+    <noscript>
+      <style>
+        .page-content, .masthead { visibility: visible; }
+      </style>
+    </noscript>
+  </head>
+  <body>
+      <div class="site-wrapper">
+        <div class="site-wrapper-inner">
+          <div class="cover-container">
+
+            <!-- Nav-bar -->
+            <header class="masthead clearfix">
+              <div class="inner">
+                <h3 class="masthead-brand">Steven Eisinger</h3>
+                <nav class="nav nav-masthead">
+                  <a class="nav-link active" href="#home-page">Home</a>
+                  <a class="nav-link" href="#cv-page">CV</a>
+                  <a class="nav-link" href="#contact-page">Contact</a>
+                </nav>
+              </div>
+            </header>
+  
+            <!-- Site body -->
+            <main role="main" class="inner cover">
+
+              <!-- Home page -->
+              <div id="home-page" class="page-content">
+                <h1 id="home-heading">Welcome!</h1>
+                <p class="lead">
+                  This is the home page of Steven Eisinger<br>
+                  Computer Engineer
+                </p>
+              </div>
+
+              <!-- Curriculum Vitae page -->
+              <div id="cv-page" class="page-content">
+                <h1 class="cover-heading" id="cv-heading">Curriculum Vitae</h1>
+                <p class="lead">
+                  Check out my <a href="https://github.com/Shtaiven" target=_blank rel="noopener noreferrer">GitHub</a>, <a href="https://bitbucket.org/Shtaiven/" target=_blank rel="noopener noreferrer">Bitbucket</a>, and <a href="https://www.linkedin.com/in/seisinger" target=_blank rel="noopener noreferrer">LinkedIn</a>.
+                </p>
+                <div id="general-info-box">
+                  <h3>Projects</h3>
+                  <ul>
+                    <li><a href="https://github.com/Shtaiven/PIC18F4520_Projects/tree/master/Project%205" target=_blank rel="noopener noreferrer">PIC Shooter</a> - A game for the PIC18F4520, written in Assembly (Summer 2016) [<a href="media/pic_shooter_report.docx">report</a>] [<a href="media/PIC_Shooter.mp4">video</a>]</li>
+                    <li><a href="https://github.com/murtazay/EE457EnigmaGame" target=_blank rel="noopener noreferrer">Enigma Game</a> - An integrated circuit which implements a puzzle game, designed using GNU Electric (Fall 2016) [<a href="https://github.com/murtazay/EE457EnigmaGame/raw/master/Enigma%20Report.docx">report</a>]</li>
+                    <li><a href="https://github.com/Shtaiven/NailArt" target=_blank rel="noopener noreferrer">Nail Art</a> - An application for previewing art made with iron nails on a block of wood, written in C++ (Fall 2015) [<a href="media/nail_art_report.docx">report</a>]</li>
+                  </ul>
+                  <h3>Education</h3>
+                  <ul>
+                    <li>Bachelor's of Engineering - Computer Engineering - CUNY City College of New York (Fall 2016)</li>
+                  </ul>
+                  <h3>Work History</h3>
+                  <ul>
+                    <li><a href="http://www.wearshade.com" target=_blank rel="noopener noreferrer">Shade</a> - Manufacturing Test and Firmware Engineer (January 2016 - Present)</li>
+                    <li><a href="http://www.wearshade.com" target=_blank rel="noopener noreferrer">Shade</a> - Electrical Engineering Intern (October 2016 - December 2016)</li>
+                    <li><a href="https://www.inyourclass.com/home" target=_blank rel="noopener noreferrer">InYourClass</a> - Intern (June 2015 - December 2015)</li>
+                  </ul>
+                  <h3>Volunteer History</h3>
+                  <ul>
+                    <li><a href="http://hmi.org/" target=_blank rel="noopener noreferrer">Hetrick Martin Institute</a> - Volunteer Tutor (2016 - Present)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Contact page -->
+              <div id="contact-page" class="page-content">
+                <h1 class="cover-heading" id="contact-heading">Contact</h1>
+                <p>
+                  <a href="steven.a.eisinger@gmail.com">steven.a.eisinger@gmail.com</a>
+                </p>
+              </div>
+
+            </main>
+          </div>
+        </div>
+      </div>
+
+    <!-- JS dependencies: jQuery, Popper, Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!-- Custom page effects -->
+    <script src="scripts/effects.js"></script>
+  </body>
 </html>

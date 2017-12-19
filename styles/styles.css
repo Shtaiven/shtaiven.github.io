@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
-#my-name, #my-profession {
+.cover-heading {
     color: salmon;
+}
+
+.page-content, .masthead {
+    visibility: hidden;
 }
