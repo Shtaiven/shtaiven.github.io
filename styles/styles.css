@@ -13,6 +13,6 @@ a {
     color: salmon;
 }
 
-.page-content {
+.page-content, .masthead {
     visibility: hidden;
 }
