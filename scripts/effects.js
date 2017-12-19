@@ -3,6 +3,7 @@ var FADE_DURATION = 1000;
 $( document ).ready( function() {
     // Init page
     $( '.page-content').hide();
+    $( '.page-content').css("visibility", "visible");
     $( '#home-page' ).fadeIn( FADE_DURATION );
 
     // Menu button handler

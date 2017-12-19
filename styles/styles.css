@@ -12,3 +12,7 @@ a {
 .cover-heading {
     color: salmon;
 }
+
+.page-content {
+    visibility: hidden;
+}
