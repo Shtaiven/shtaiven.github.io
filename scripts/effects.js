@@ -1,3 +1,16 @@
+var FADE_DURATION = 1000;
+
 $( document ).ready( function() {
-    $( '#cv-page' ).hide().fadeIn( 2000 );
+    // Init page
+    $( '.page-content').hide();
+    $( '#cv-page' ).fadeIn( FADE_DURATION );
+
+    // Menu button handler
+    $( '.nav-link' ).click( function() {
+        $( '.page-content').hide();
+        $( '.nav-link' ).removeClass( 'active' );
+        $( this ).addClass( 'active' );
+        var button_href = $( this ).attr( 'href' );
+        $( button_href ).fadeIn( FADE_DURATION );
+    });
 });
