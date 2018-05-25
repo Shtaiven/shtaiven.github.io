@@ -6,8 +6,21 @@ $( document ).ready( function() {
     $( '.masthead' ).hide();
     $( '.page-content' ).css( 'visibility', 'visible' );
     $( '.masthead' ).css( 'visibility', 'visible' );
-    $( '#home-page' ).fadeIn( FADE_DURATION );
     $( '.masthead' ).fadeIn( FADE_DURATION );
+
+    // If a specific page is selected, show it, otherwise show home
+    if ( window.location.hash ) {
+        var hash = window.location.hash;
+        $ ( hash ).fadeIn( FADE_DURATION );
+        $( '.nav-link' ).removeClass( 'active' );
+        $( '.nav-link' )
+            .filter( function( index ) {
+                return $( this ).attr( 'href' ) === hash;
+            })
+            .addClass( 'active' );
+    } else {
+        $( '#home-page' ).fadeIn( FADE_DURATION );
+    }
 
     // Menu button handler
     $( '.nav-link' ).click( function() {
