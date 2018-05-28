@@ -20,7 +20,10 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- reCaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
   </head>
 
@@ -32,16 +35,16 @@
     <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
         <li class="sidebar-brand">
-          <a class="js-scroll-trigger" href="#page-top">Menu</a>
+          <a class="js-scroll-trigger" href="#page-top">Navigation</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#page-top">Home</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#about">About</a>
+          <a class="js-scroll-trigger" href="#about">About Me</a>
         </li>
         <li class="sidebar-nav-item">
-          <a class="js-scroll-trigger" href="#services">Services</a>
+          <a class="js-scroll-trigger" href="#skills">Skills</a>
         </li>
         <li class="sidebar-nav-item">
           <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
@@ -54,12 +57,9 @@
 
     <!-- Header -->
     <header class="masthead d-flex">
-      <div class="container text-center my-auto text-white">
-        <h1 class="mb-1">Steven Eisinger</h1>
-        <h3 class="mb-5">
-          <em>Electrical and Computer Engineering</em>
-        </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">About Me</a>
+      <div class="container text-center my-auto">
+        <img src="img/bg-masthead-text.png" alt="Steven A. Eisinger" style="width:100%;">
+        <a class="btn btn-secondary btn-xl js-scroll-trigger" href="#about">About Me</a>
       </div>
       <div class="overlay"></div>
     </header>
@@ -72,18 +72,17 @@
             <h2>Stylish Portfolio is the perfect theme for your next project!</h2>
             <p class="lead mb-5">This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
               <a href="https://unsplash.com/">Unsplash</a>!</p>
-            <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+            <a href="docs/resume_online.pdf" class="btn btn-xl btn-dark">Download Resume</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="content-section bg-primary text-white text-center" id="services">
+    <!-- Skills -->
+    <section class="content-section bg-primary text-white text-center" id="skills">
       <div class="container">
         <div class="content-section-heading">
-          <h3 class="text-secondary mb-0">Services</h3>
-          <h2 class="mb-5">What We Offer</h2>
+          <h2 class="mb-5">What I Do</h2>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -132,8 +131,7 @@
     <section class="content-section" id="portfolio">
       <div class="container">
         <div class="content-section-heading text-center">
-          <h3 class="text-secondary mb-0">Portfolio</h3>
-          <h2 class="mb-5">Recent Projects</h2>
+          <h2 class="mb-5">Portfolio</h2>
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
@@ -187,10 +185,13 @@
     <!-- Contact Info -->
     <section class="content-section bg-primary text-white" id="contact">
         <div class="container text-center">
-            <h2 class="mb-4">Contact</h2>
-            <p class="lead mb-5">+1 (347) 731 4151 <br/>
-              <a class="text-white" href="mailto:steven.a.eisinger@gmail.com">steven.a.eisinger@gmail.com</a></p>
-            <a href="docs/resume_online.pdf" class="btn btn-xl btn-dark">Download Resume</a>
+          <h2 class="mb-5">Contact</h2>
+          <div class="captcha">
+            <div class="g-recaptcha" data-sitekey="6LdByVsUAAAAAGW17IuBjRbV6PizlUVa1zwASbn-"></div>
+          </div>
+          <noscript>
+            <p class="mb-0">This form requires JavaScript to be enabled.</p>
+          </noscript>
         </div>
     </section>
 
@@ -227,6 +228,7 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.min.js"></script>
+    <script src="js/contact-form.js"></script>
 
   </body>
 
