@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn-xl {
@@ -32,7 +32,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: 800;
+  font-family: 'Dosis', sans-serif;
 }
 
 .text-faded {
@@ -121,7 +122,7 @@ h6 {
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #1a9dbb;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -204,7 +205,7 @@ h6 {
 
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: #1a9dbb;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -305,7 +306,7 @@ footer.footer .social-link {
   width: 4rem;
   line-height: 4.3rem;
   font-size: 1.5rem;
-  background-color: #1D809F;
+  background-color: #1a9dbb;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
@@ -316,7 +317,7 @@ footer.footer .social-link:hover {
 }
 
 a {
-  color: #1D809F;
+  color: #1a9dbb;
 }
 
 a:hover, a:focus, a:active {
@@ -324,8 +325,8 @@ a:hover, a:focus, a:active {
 }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #1a9dbb !important;
+  border-color: #1a9dbb !important;
   color: #fff !important;
 }
 
@@ -335,8 +336,8 @@ a:hover, a:focus, a:active {
 }
 
 .btn-secondary {
-  background-color: #ecb807 !important;
-  border-color: #ecb807 !important;
+  background-color: #fbc93f !important;
+  border-color: #fbc93f !important;
   color: #fff !important;
 }
 
@@ -349,27 +350,46 @@ a:hover, a:focus, a:active {
   color: #fff !important;
 }
 
+.btn-transparent {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: #fbc93f !important;
+  border-width: thick;
+  color: #fbc93f !important;
+}
+
 .btn {
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   font-weight: 700;
+  font-size: 1.5em;
 }
 
 .bg-primary {
-  background-color: #1D809F !important;
+  background-color: #1a9dbb !important;
+}
+
+.bg-secondary {
+  background-color: #fbc93f !important;
 }
 
 .text-primary {
-  color: #1D809F !important;
+  color: #1a9dbb !important;
 }
 
 .text-secondary {
-  color: #ecb807 !important;
+  color: #fbc93f !important;
 }
 
 .captcha {
   text-align: center;
+  padding: 2rem;
 }
 
 .g-recaptcha {
   display: inline-block;
+}
+
+.masthead-text {
+  width:100%;
+  -webkit-filter: drop-shadow(0px 3px 3px 0px rgba(0, 0, 0, 0.1));
+  filter: drop-shadow(0px 3px 3px 0px rgba(0, 0, 0, 0.1));
 }
