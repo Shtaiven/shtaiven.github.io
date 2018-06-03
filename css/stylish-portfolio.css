@@ -12,9 +12,30 @@ body {
   padding: 1.25rem 2.5rem;
 }
 
-.content-section {
+#contact {
   padding-top: 7.5rem;
   padding-bottom: 7.5rem;
+  min-width: none;
+}
+
+section.content-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 7.5rem !important;
+  padding-bottom: 7.5rem !important;
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.content-section {
+    min-height: 100vh;
+  }
+}
+
+@media (min-width: 992px) {
+  section.content-section {
+    padding-top: 7.5rem !important;
+    padding-bottom: 7.5rem !important;
+  }
 }
 
 .content-section-heading h2 {
@@ -250,7 +271,7 @@ h6 {
 
 .portfolio-item .caption .caption-content {
   color: #fff;
-  margin: auto 2rem 2rem;
+  margin: 2rem 2rem auto;
 }
 
 .portfolio-item .caption .caption-content h2 {
@@ -285,13 +306,13 @@ h6 {
     clip-path: inset(-1px);
   }
   .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    -webkit-clip-path: inset(1rem);
+    clip-path: inset(1rem);
   }
   .portfolio-item:hover .caption {
     background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
+    -webkit-clip-path: inset(1rem);
+    clip-path: inset(1rem);
   }
 }
 
@@ -350,11 +371,39 @@ a:hover, a:focus, a:active {
   color: #fff !important;
 }
 
-.btn-transparent {
+.btn-transparent-secondary {
   background-color: rgba(0, 0, 0, 0) !important;
   border-color: #fbc93f !important;
   border-width: thick;
   color: #fbc93f !important;
+}
+
+.btn-transparent-secondary:hover, .btn-transparent-secondary:focus, .btn-transparent-secondary:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-color: #ba9106 !important;
+  color: #ba9106 !important;
+}
+
+.btn-transparent-black {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: #000 !important;
+  border-width: thick;
+  color: #000 !important;
+}
+
+.btn-transparent-black:hover, .btn-transparent-black:focus, .btn-transparent-black:active {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-transparent-white {
+  background-color: rgba(255, 255, 255, 0) !important;
+  border-color: #fff !important;
+  border-width: thick;
+  color: #fff !important;
+}
+
+.btn-transparent-white:hover, .btn-transparent-white:focus, .btn-transparent-white:active {
+  background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .btn {
@@ -392,4 +441,9 @@ a:hover, a:focus, a:active {
   width:100%;
   -webkit-filter: drop-shadow(0px 3px 3px 0px rgba(0, 0, 0, 0.1));
   filter: drop-shadow(0px 3px 3px 0px rgba(0, 0, 0, 0.1));
+}
+
+.btn-advance {
+  padding-top: 2.5rem !important;
+  position: relative !important;
 }
