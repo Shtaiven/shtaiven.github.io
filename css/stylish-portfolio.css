@@ -443,7 +443,10 @@ a:hover, a:focus, a:active {
   filter: drop-shadow(0px 3px 3px 0px rgba(0, 0, 0, 0.1));
 }
 
-.btn-advance {
-  padding-top: 2.5rem !important;
-  position: relative !important;
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
 }
