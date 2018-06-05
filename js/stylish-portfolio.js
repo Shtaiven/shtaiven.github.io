@@ -45,8 +45,8 @@
 $(function() {
   // Portfolio modal
   $(".portfolio-item").click(function() {
-    var title = $(this).find("h2").text();
-    var content = $(this).find("p").text();
+    var title = $(this).find("h2").text(),
+        content = $(this).find("p").text();
 
     $(".modal-title").text(title);
     $(".modal-body").text(content);
