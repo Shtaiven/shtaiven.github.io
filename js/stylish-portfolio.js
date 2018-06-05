@@ -43,6 +43,15 @@
 })(jQuery); // End of use strict
 
 $(function() {
+  // Portfolio modal
+  $(".portfolio-item").click(function() {
+    var title = $(this).find("h2").text();
+    var content = $(this).find("p").text();
+
+    $(".modal-title").text(title);
+    $(".modal-body").text(content);
+  })
+
   // Contact form
   $("#submit").click(function(e) {
     e.preventDefault();
@@ -67,14 +76,5 @@ $(function() {
             $('#form-response').text('Error.');
         }
     });
-  })
-
-  // Portfolio modal
-  $(".portfolio-item").click(function() {
-    var title = $(this).find("h2").text();
-    var content = $(this).find("p").text();
-
-    $(".modal-title").text(title);
-    $(".modal-body").text(content);
   })
 });
