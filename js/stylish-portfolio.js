@@ -40,9 +40,6 @@
     }
   });
 
-})(jQuery); // End of use strict
-
-$(function() {
   // Portfolio modal
   $(".portfolio-item").click(function() {
     var title = $(this).find("h2").text(),
@@ -77,4 +74,4 @@ $(function() {
         }
     });
   })
-});
+})(jQuery); // End of use strict
