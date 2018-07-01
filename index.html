@@ -16,7 +16,7 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <link href="vendor/Harman-Sans/Harman-Sans.css" rel="stylesheet">
 
@@ -80,7 +80,7 @@
 
           </p>
           <div class="mt-5">
-            <a class="btn btn-transparent-black btn-xl js-scroll-trigger m-1" href="#skills">Skills</a>
+            <a class="btn btn-primary btn-xl js-scroll-trigger m-1" href="#skills">Skills</a>
           </div>
         </div>
     </section>
@@ -89,7 +89,7 @@
     <section class="content-section bg-primary text-white text-center vertical-center" id="skills">
       <div class="container">
         <div class="content-section-heading">
-          <h2 class="mb-5">WHAT I DO</h2>
+          <h2 class="mb-5">SKILLS</h2>
         </div>
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
@@ -132,7 +132,7 @@
           </div>
         </div>
         <div class="mt-5">
-          <a class="btn btn-transparent-white btn-xl js-scroll-trigger m-1" href="#portfolio">Portfolio</a>
+          <a class="btn btn-secondary btn-xl js-scroll-trigger m-1" href="#portfolio">Portfolio</a>
         </div>
       </div>
     </section>
@@ -245,7 +245,7 @@
           </div>
         </div>
         <div class="mt-5 text-center">
-          <a class="btn btn-transparent-black btn-xl js-scroll-trigger m-1" href="#contact">Contact</a>
+          <a class="btn btn-primary btn-xl js-scroll-trigger m-1" href="#contact">Contact</a>
         </div>
       </div>
     </section>
@@ -255,13 +255,12 @@
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="portfolio-modal-title">Modal title</h5>
+            <h5 class="modal-title" id="portfolio-modal-title"></h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            Modal body...
           </div>
         </div>
       </div>
@@ -273,18 +272,29 @@
           <div class="content-section-heading">
             <h2 class="mb-5">CONTACT</h2>
           </div>
-          <form action="" method="post">
-            <input name="name" size="32" placeholder="Your Name" required><br /><br />
-            <input name="email" type="email" size="32" placeholder="Your Email" required><br /><br />
-            <textarea name="message" rows="5" cols="30" placeholder="Type your message here..." required></textarea>
-            <div class="captcha">
-              <div class="g-recaptcha" data-sitekey="6LdByVsUAAAAAGW17IuBjRbV6PizlUVa1zwASbn-"></div>
+          <div="row">
+            <div class="col-lg-6 offset-lg-3">
+              <form action="https://docs.google.com/forms/d/e/1FAIpQLSfqLvtHCUXgNQyFCcphkgZAq4lousdyeAIjABZGOpJhUQu-VA/formResponse" method="post" id="application-form" target="_blank">
+                <div class="form-group row">
+                  <input type="text" name="entry.2005620554" value="" class="form-control name" id="entry_2005620554" dir="auto" aria-label="Name  " aria-required="true" placeholder="Name">
+                </div>
+                <div class="form-group row">
+                  <input type="text" name="entry.1045781291" value="" class="form-control email" id="entry_1045781291" dir="auto" aria-label="Email  " aria-required="true" placeholder="Email">
+                </div>
+                <div class="form-group row">
+                  <input type="text" name="entry.1166974658" value="" class="form-control phone" id="entry_1166974658" dir="auto" aria-label="Phone Number  " aria-required="true" placeholder="Phone number">
+                </div>
+                <div class="form-group row">
+                  <textarea name="entry.1166974658" value="" class="form-control message" id="entry_1166974658" rows="5" dir="auto" aria-label="Message  " aria-required="true" placeholder="Message"></textarea>
+                </div>
+                <div class="form-group row">
+                  <div class="col-lg-6 offset-lg-3">
+                    <input type="submit" id="submit" class="btn btn-secondary" name="submit" value="Submit form">
+                  </div>
+                </div>
+              </form>
             </div>
-            <input class="btn btn-transparent-white btn-xl" type="submit" value="Send" />
-          </form>
-          <noscript>
-            <p class="mb-0">This form requires JavaScript to be enabled.</p>
-          </noscript>
+          </div>
         </div>
     </section>
 
@@ -318,9 +328,6 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- reCaptcha -->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/stylish-portfolio.js"></script>
