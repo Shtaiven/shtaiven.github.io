@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  font-family: 'Coda', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .btn-xl {
@@ -210,14 +210,12 @@ h6 {
 }
 
 .service-icon {
-  background-color: #fff;
-  color: #1a9dbb;
+  color: #fff;
   height: 7rem;
   width: 7rem;
   display: block;
   line-height: 7.5rem;
-  font-size: 2.25rem;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  font-size: 3rem;
 }
 
 .callout {
