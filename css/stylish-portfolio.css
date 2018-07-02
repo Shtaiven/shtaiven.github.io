@@ -61,7 +61,7 @@ h4,
 h5,
 h6 {
   font-weight: 800;
-  font-family: 'HarmanSans', sans-serif;
+  font-family: 'HarmanSans', fantasy;
 }
 
 .text-faded {
@@ -77,8 +77,8 @@ h6 {
   height: 50px;
   text-align: center;
   color: white;
-  background: rgba(52, 58, 64, 0.5);
-  line-height: 45px;
+  background: #fbc93f;
+  line-height: 60px;
 }
 
 .scroll-to-top:focus, .scroll-to-top:hover {
@@ -86,11 +86,12 @@ h6 {
 }
 
 .scroll-to-top:hover {
-  background: #343a40;
+  background: #ba9106;
 }
 
 .scroll-to-top i {
   font-weight: 800;
+  font-size: 2rem;
 }
 
 .masthead {
@@ -135,7 +136,7 @@ h6 {
   -o-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1a9dbb;
+  background: #155d74;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -168,7 +169,7 @@ h6 {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  background: rgba(52, 58, 64, 0.1);
+  background: rgba(52, 58, 64, 0.2);
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -178,6 +179,8 @@ h6 {
 
 .sidebar-nav > .sidebar-brand a {
   color: #fff;
+  font-family: 'HarmanSans', fantasy;
+  font-size: 1.5rem;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
@@ -203,8 +206,8 @@ h6 {
   height: 50px;
   text-align: center;
   color: #fff;
-  background: rgba(52, 58, 64, 0.5);
-  line-height: 50px;
+  background: #fbc93f;
+  line-height: 60px;
   z-index: 999;
 }
 
@@ -213,7 +216,12 @@ h6 {
 }
 
 .menu-toggle:hover {
-  background: #343a40;
+  background: #ba9106;
+}
+
+.menu-toggle i {
+  font-weight: 800;
+  font-size: 2rem;
 }
 
 .service-icon {
@@ -332,8 +340,8 @@ footer.footer .social-link {
   display: block;
   height: 4rem;
   width: 4rem;
-  line-height: 4.3rem;
-  font-size: 1.5rem;
+  line-height: 3.9rem;
+  font-size: 2rem;
   background-color: #1a9dbb;
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
@@ -417,7 +425,7 @@ a:hover, a:focus, a:active {
   box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
   font-weight: 800;
   font-size: 1.7em;
-  font-family: "HarmanSans";
+  font-family: 'HarmanSans', fantasy;
 }
 
 .bg-primary {
