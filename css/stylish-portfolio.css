@@ -18,6 +18,13 @@ body {
   min-width: none;
 }
 
+@media(max-width: 992px) {
+  .page-nav-btn {
+    visibility: hidden;
+    position: absolute;
+  }
+}
+
 section.content-section {
   border-bottom: 1px solid #dee2e6;
   padding-top: 7.5rem !important;
@@ -231,6 +238,23 @@ h6 {
   font-weight: 700;
   display: block;
   max-width: 30rem;
+}
+
+#about {
+  min-height: 30rem;
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-image: url("../img/bg-about-fade-blur.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 992px) {
+  #about {
+    height: 100vh;
+  }
 }
 
 .portfolio-item {
