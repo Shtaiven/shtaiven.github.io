@@ -42,10 +42,12 @@
 
   // Portfolio modal
   $(".portfolio-item").click(function() {
-    var title = $(this).find("h2").text(),
-        content = $(this).find("p").text();
+    var title = $(this).find(".portfolio-title").text(),
+        snippet = $(this).find(".portfolio-snippet").text(),
+        content = $(this).find(".portfolio-content").text();
 
     $(".modal-title").text(title);
+    $(".modal-snippet").text(snippet);
     $(".modal-body").text(content);
   })
 })(jQuery); // End of use strict

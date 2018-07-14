@@ -79,6 +79,7 @@ h6 {
   color: white;
   background: #fbc93f;
   line-height: 60px;
+  z-index: 999;
 }
 
 .scroll-to-top:focus, .scroll-to-top:hover {
@@ -297,6 +298,10 @@ h6 {
 .portfolio-item .caption .caption-content p {
   font-weight: 300;
   font-size: 1.1rem;
+}
+
+.portfolio-item .portfolio-content {
+  visibility: hidden;
 }
 
 @media (min-width: 992px) {
