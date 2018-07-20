@@ -301,8 +301,10 @@ h6 {
   font-size: 1.1rem;
 }
 
-.portfolio-item .portfolio-content {
+.portfolio-content {
   visibility: hidden;
+  position: fixed;
+  color: #000;
 }
 
 .modal-img {
