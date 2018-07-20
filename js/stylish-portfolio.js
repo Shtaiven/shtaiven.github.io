@@ -45,12 +45,12 @@
     var title = $(this).find(".portfolio-title").text(),
         snippet = $(this).find(".portfolio-snippet").text(),
         picture = $(this).find("img"),
-        content = $(this).find(".portfolio-content").text();
+        content = $(this).parent().find(".portfolio-content").html();
 
     $(".modal-title").text(title);
     $(".modal-snippet").text(snippet);
     $(".modal-img").attr("src", picture.prop("src"));
     $(".modal-img").attr("alt", picture.prop("alt"));
-    $(".modal-body").text(content);
+    $(".modal-body").html(content);
   })
 })(jQuery); // End of use strict
