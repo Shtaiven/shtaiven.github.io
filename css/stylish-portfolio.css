@@ -305,6 +305,11 @@ h6 {
   visibility: hidden;
 }
 
+.modal-img {
+  width: 100%;
+  height: auto;
+}
+
 @media (min-width: 992px) {
   .portfolio-item {
     max-width: none;
