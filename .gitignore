@@ -91,3 +91,9 @@ ENV/
 # Sublime project files
 *.sublime-project
 *.sublime-workspace
+
+# Node.js
+node_modules
+
+# macOS
+***/.DS_Store
